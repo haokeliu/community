@@ -1,0 +1,7 @@
+2020-02-15 22:37:57,244 INFO [main] c.n.c.LoggerTests [StartupInfoLogger.java:50] Starting LoggerTests on DESKTOP-9CP1R6J with PID 6432 (started by 刘浩科 in D:\Program Files\CodeBase\community)
+2020-02-15 22:37:57,247 INFO [main] c.n.c.LoggerTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2020-02-15 22:37:59,196 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-15 22:37:59,430 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2020-02-15 22:37:59,673 INFO [main] c.n.c.LoggerTests [StartupInfoLogger.java:59] Started LoggerTests in 2.929 seconds (JVM running for 3.67)
+2020-02-15 22:38:00,045 INFO [main] c.n.c.LoggerTests [LoggerTests.java:23] logger
+2020-02-15 22:38:00,056 INFO [Thread-2] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
