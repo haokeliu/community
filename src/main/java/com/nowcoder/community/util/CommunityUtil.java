@@ -22,4 +22,7 @@ public class CommunityUtil {
         //转换为16进制的 MD5码
         return DigestUtils.md5DigestAsHex(key.getBytes());
     }
+
+
+
 }

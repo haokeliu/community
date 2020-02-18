@@ -158,4 +158,68 @@ public class UserService implements CommunityConstant {
         map.put("ticket",loginTicket.getTicket());
         return map;
     }
+
+    public void logout(String ticket) {
+        loginTicketMapper.updateStatus(ticket,1);
+    }
+
+    public Map<String, Object> sendPasswordEmail(String email, String confirmCode) {
+        Map<String, Object> map = new HashMap<>();
+        if (StringUtils.isBlank(email)){
+            map.put("emailMsg", "邮箱不能为空");
+            return map;
+        }
+        User user = userMapper.selectByEmail(email);
+        if (user == null){
+            map.put("emailMsg", "邮箱不存在");
+            return map;
+        }
+        //发送激活邮件
+        Context context = new Context();
+        context.setVariable("email",user.getEmail());
+
+        context.setVariable("confirmCode",confirmCode);
+        String content = templateEngine.process("/mail/forget", context);
+        mailClient.sendMail(user.getEmail(), "修改胡同密码", content);
+        return map;
+    }
+    public Map<String, Object> updatePassword(String email, String password) {
+        Map<String, Object> map = new HashMap<>();
+        if (StringUtils.isBlank(email)){
+            map.put("emailMsg", "邮箱不能为空");
+            return map;
+        }
+        User user = userMapper.selectByEmail(email);
+        if (user == null){
+            map.put("emailMsg", "邮箱不存在");
+            return map;
+        }
+        userMapper.updatePassword(user.getId(), CommunityUtil.md5(password + user.getSalt()));
+        return map;
+    }
+
+    public LoginTicket findLoginTicket(String ticket) {
+        return loginTicketMapper.selectByTicket(ticket);
+    }
+
+    public int updateHeader(int userId, String HeaderUrl) {
+        return userMapper.updateHeader(userId, HeaderUrl);
+    }
+
+    public int changePassword(int userId, String password) {
+        User user = userMapper.selectById(userId);
+        password = password + user.getSalt();
+        password = CommunityUtil.md5(password);
+        return userMapper.updatePassword(userId, password);
+    }
+
+    public Boolean vertifyPassword(int userId, String password) {
+        User user = userMapper.selectById(userId);
+        password = CommunityUtil.md5(password + user.getSalt());
+        String oldPassword = user.getPassword();
+        if (oldPassword.equals(password)){
+            return true;
+        }
+        return false;
+    }
 }
