@@ -4,6 +4,7 @@ import com.google.code.kaptcha.Producer;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityConstant;
+import com.nowcoder.community.util.CommunityUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -147,6 +148,7 @@ public class LoginController implements CommunityConstant {
     }
 
     @PostMapping("/forget")
+    @ResponseBody
     public String forget(String email, String code, String password,
                                       Model model, HttpSession session){
 
@@ -155,11 +157,11 @@ public class LoginController implements CommunityConstant {
         }
         Map<String, Object> map = userService.updatePassword(email, password);
         if (map.isEmpty()){
-            return "/site/login";
+            return "redirect:/login";
         }else {
             model.addAttribute("emailMsg",map.get("emailMsg"));
         }
-        return "site/forget";
+        return CommunityUtil.getJsonString(200,"验证码不正确");
     }
 
 }

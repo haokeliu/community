@@ -1,7 +1,9 @@
 package com.nowcoder.community.dao;
 
 import com.nowcoder.community.entity.DiscussPost;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
@@ -17,4 +19,10 @@ public interface DiscussPostMapper {
     //查询一共多少个帖子，首页时不需要传入UserId
     //如果动态拼SQL 并且只有一个参数， 使用@Param 给参数取别名 <if>使用，必须加别名
     int selectDiscussPostRows(@Param("userId") int userId);
+
+    int insertDiscussPost(DiscussPost discussPost);
+
+    DiscussPost selectDiscussPostById(int id);
+
+    int updateComentCount(int id, int commentCount);
 }

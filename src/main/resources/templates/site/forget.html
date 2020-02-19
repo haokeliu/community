@@ -176,15 +176,18 @@
 	<script th:src="@{/js/global.js}"></script>
 	<script>
 		function getConfirmCode() {
+
 			var G = document.getElementById("your-email").value;
 			var path = "http://localhost:8080/community/ConfirmCode/" + G;
-			console.log(path)
+			console.log(path);
+			$.post(
+				"/community/alpha/ajax",
+				{"email":G},
+					function (data) {
+						data = $.parseJSON(data);
 
-			$.ajax({
-				type: "GET",
-				url: path,
-				async: "true"
-			});
+					}
+			);
 		}
 	</script>
 </body>
