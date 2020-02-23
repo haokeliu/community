@@ -28,7 +28,7 @@ public class CommunityUtil {
 
     public static String getJsonString (int code, String msg, Map<String, Object> map) {
         JSONObject json = new JSONObject();
-        json.put("code",json);
+        json.put("code",code);
         json.put("msg",msg);
         if (map != null) {
             for (String key : map.keySet()) {
