@@ -117,10 +117,10 @@ public class UserController implements CommunityConstant {
     public String changePwd(String oldPwd, String password, Model model) {
         User user = hostHolder.getUser();
         if (userService.vertifyPassword(user.getId(), oldPwd)){
-            System.out.println(oldPwd+" "+password);
+
             userService.changePassword(user.getId(), password);
             hostHolder.clear();
-            System.out.println(hostHolder.getUser());
+
             return "redirect:/site/login";
         }else {
             model.addAttribute("passwordMsg","原始密码错误");

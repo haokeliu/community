@@ -41,7 +41,6 @@ public class MessageService {
     public int addMessage(Message message) {
         message.setContent(HtmlUtils.htmlEscape(message.getContent()));
         message.setContent(sensitiveFilter.filter(message.getContent()));
-        System.out.println(message.toString());
         return messageMapper.insertMessage(message);
     }
 
