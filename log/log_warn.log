@@ -1,26 +1,68 @@
-2020-02-25 21:53:05,820 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:07,927 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:10,030 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:12,233 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:14,653 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:17,364 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:20,372 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:23,483 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:26,622 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:29,632 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:32,743 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:35,660 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:38,669 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:41,581 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:53:44,790 WARN [restartedMain] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-1, groupId=community-consumer-group] Connection to node -1 could not be established. Broker may not be available.
-2020-02-25 21:58:26,842 WARN [http-nio-8080-exec-10] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [126] milliseconds.
-2020-02-25 22:14:47,393 WARN [http-nio-8080-exec-3] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [139] milliseconds.
-2020-02-25 22:16:53,082 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [130] milliseconds.
-2020-02-25 22:16:58,615 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "my-post.html"]
-2020-02-25 22:17:02,697 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "my-reply.html"]
-2020-02-25 22:18:08,768 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [130] milliseconds.
-2020-02-25 22:24:01,510 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [129] milliseconds.
-2020-02-25 22:24:35,501 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [java.lang.RuntimeException: 用户不存在!]
-2020-02-25 22:25:26,862 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [java.lang.RuntimeException: 该用户不存在]
-2020-02-25 22:29:23,727 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [135] milliseconds.
-2020-02-25 22:30:43,295 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [127] milliseconds.
+2020-02-28 11:31:07,356 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'quartzScheduler' defined in class path resource [org/springframework/boot/autoconfigure/quartz/QuartzAutoConfiguration.class]: Invocation of init method failed; nested exception is org.quartz.SchedulerException: Repeat Interval cannot be zero.
+2020-02-28 17:56:29,743 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [140] milliseconds.
+2020-02-28 18:01:20,861 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "search"]
+2020-02-28 18:16:15,657 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [122] milliseconds.
+2020-02-28 18:16:15,659 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by type desc, create_time desc
+        limit 0, 10' at line 11
+### The error may exist in file [D:\Program Files\CodeBase\community\target\classes\mapper\DiscussPostMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id, user_id, title, content, type, status, create_time, comment_count, score               from discuss_post         where status != 2                                 order by type desc, create_time desc                             order by type desc, create_time desc         limit ?, ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by type desc, create_time desc
+        limit 0, 10' at line 11
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by type desc, create_time desc
+        limit 0, 10' at line 11]
+2020-02-28 19:44:53,701 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [124] milliseconds.
+2020-02-28 19:47:14,073 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [123] milliseconds.
+2020-02-28 19:49:37,498 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [127] milliseconds.
+2020-02-28 20:48:22,532 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [148] milliseconds.
+2020-02-28 20:56:47,048 WARN [RMI TCP Connection(3)-192.168.0.130] o.s.b.a.e.ElasticsearchHealthIndicator [AbstractHealthIndicator.java:89] Elasticsearch health check failed
+org.elasticsearch.ElasticsearchTimeoutException: java.util.concurrent.TimeoutException: Timeout waiting for task.
+	at org.elasticsearch.common.util.concurrent.FutureUtils.get(FutureUtils.java:72)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:54)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:44)
+	at org.springframework.boot.actuate.elasticsearch.ElasticsearchHealthIndicator.doHealthCheck(ElasticsearchHealthIndicator.java:80)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:61)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:126)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:99)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:688)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:389)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.util.concurrent.TimeoutException: Timeout waiting for task.
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:235)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:69)
+	at org.elasticsearch.common.util.concurrent.FutureUtils.get(FutureUtils.java:70)
+	... 37 common frames omitted
+2020-02-28 20:56:55,500 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [123] milliseconds.
+2020-02-28 21:00:34,415 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [123] milliseconds.
+2020-02-28 21:49:30,682 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [125] milliseconds.
+2020-02-28 22:00:53,402 WARN [http-nio-8080-exec-1] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [126] milliseconds.

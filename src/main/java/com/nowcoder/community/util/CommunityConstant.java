@@ -59,9 +59,14 @@ public interface CommunityConstant {
     String TOPIC_FOLLOW = "follow";
 
     /**
-     * 主题类型: 关注
+     * 主题类型: 发布
      */
     String TOPIC_PUBLISH = "publish";
+
+    /**
+     * 主题类型: 删帖
+     */
+    String TOPIC_DELETE = "delete";
 
     /**
      * 系统用户ID

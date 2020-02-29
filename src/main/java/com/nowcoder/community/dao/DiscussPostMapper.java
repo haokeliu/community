@@ -14,7 +14,7 @@ import java.util.List;
 public interface DiscussPostMapper {
 
     //考虑查询 首页时不需要传入UserId 该方法是动态生产SQL语句
-    List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit);
+    List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit, int orderMode);
 
     //查询一共多少个帖子，首页时不需要传入UserId
     //如果动态拼SQL 并且只有一个参数， 使用@Param 给参数取别名 <if>使用，必须加别名
@@ -25,4 +25,10 @@ public interface DiscussPostMapper {
     DiscussPost selectDiscussPostById(int id);
 
     int updateComentCount(int id, int commentCount);
+
+    int updateType(int id, int type);
+
+    int updateStatus(int id, int status);
+
+    int updateScore(int id, double score);
 }
